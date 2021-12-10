@@ -8,7 +8,7 @@
     <link href="/2021/12/10/Redis/"/>
     <url>/2021/12/10/Redis/</url>
     
-    <content type="html"><![CDATA[<p> 这是摘要</p><h1 id="Redis的常见命令"><a href="#Redis的常见命令" class="headerlink" title="Redis的常见命令"></a>Redis的常见命令</h1>]]></content>
+    <content type="html"><![CDATA[<p> 本篇文章是根据<a href="https://www.bilibili.com/video/BV1CJ411m7Gc">黑马程序员</a>出品的视频，学习所做的笔记</p><h1 id="Redis的简单介绍"><a href="#Redis的简单介绍" class="headerlink" title="Redis的简单介绍"></a>Redis的简单介绍</h1><p><strong>概念：</strong>Redis (REmote DIctionary Server) 是用 C 语言开发的一个开源的<em>高性能键值对（key-value）数据库。</em></p><p><strong>类型</strong>：非关系型数据库（Nosql）</p><p><strong>特征：</strong></p><ul><li>可扩容，可伸缩</li><li>大数据量下高性能</li><li>灵活的数据模型</li><li>高可用</li></ul><p><strong>关键词：</strong>单线程、高性能、多数据类型、持久化</p><h1 id="Redis的应用"><a href="#Redis的应用" class="headerlink" title="Redis的应用"></a>Redis的应用</h1><ul><li>为热点数据加速查询（主要场景），如热点商品、热点新闻、热点资讯、推广类等高访问量信息等</li><li>任务队列，如秒杀、抢购、购票排队等</li><li>即时信息查询，如各位排行榜、各类网站访问统计、公交到站信息、在线人数信息（聊天室、网站）、设<br>备信号等 </li><li>时效性信息控制，如验证码控制、投票控制等</li><li>分布式数据共享，如分布式集群架构中的 session 分离</li><li>消息队列</li><li>分布式锁</li></ul><h1 id="Redis的常见命令"><a href="#Redis的常见命令" class="headerlink" title="Redis的常见命令"></a>Redis的常见命令</h1>]]></content>
     
     
     <categories>
