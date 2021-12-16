@@ -16,12 +16,12 @@
   <meta name="description" content="kusuzi Blog">
   <meta name="author" content="Kusuzi">
   <meta name="keywords" content="">
-  <meta name="description" content="本篇文章是根据黑马程序员出品的视频，学习所做的笔记 1. Redis的简单介绍概念：Redis (REmote DIctionary Server) 是用 C 语言开发的一个开源的高性能键值对（key-value）数据库。 类型：非关系型数据库（Nosql） 特征：  可扩容，可伸缩 大数据量下高性能 灵活的数据模型 高可用  关键词：单线程、高性能、多数据类型、持久化 2. Redis的应用">
+  <meta name="description" content="本篇文章是根据黑马程序员的视频，学习所做的笔记 1. Redis的简单介绍概念：Redis (REmote DIctionary Server) 是用 C 语言开发的一个开源的高性能键值对（key-value）数据库。 类型：非关系型数据库（Nosql） 特征：  可扩容，可伸缩 大数据量下高性能 灵活的数据模型 高可用  关键词：单线程、高性能、多数据类型、持久化 2. Redis的应用 为热">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Redis">
 <meta property="og:url" content="http://example.com/2021/12/10/Redis/index.html">
 <meta property="og:site_name" content="kusuzi">
-<meta property="og:description" content="本篇文章是根据黑马程序员出品的视频，学习所做的笔记 1. Redis的简单介绍概念：Redis (REmote DIctionary Server) 是用 C 语言开发的一个开源的高性能键值对（key-value）数据库。 类型：非关系型数据库（Nosql） 特征：  可扩容，可伸缩 大数据量下高性能 灵活的数据模型 高可用  关键词：单线程、高性能、多数据类型、持久化 2. Redis的应用">
+<meta property="og:description" content="本篇文章是根据黑马程序员的视频，学习所做的笔记 1. Redis的简单介绍概念：Redis (REmote DIctionary Server) 是用 C 语言开发的一个开源的高性能键值对（key-value）数据库。 类型：非关系型数据库（Nosql） 特征：  可扩容，可伸缩 大数据量下高性能 灵活的数据模型 高可用  关键词：单线程、高性能、多数据类型、持久化 2. Redis的应用 为热">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/kusuzi/image-folder@master/Redis/string_01.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/kusuzi/image-folder@master/Redis/hash_01.png">
@@ -32,13 +32,15 @@
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/kusuzi/image-folder@master/Redis/jedis_1.jpg">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/kusuzi/image-folder@master/Redis/jedis_02.jpg">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/kusuzi/image-folder@master/Redis/jedis_03.jpg">
-<meta property="og:image" content="d:/Typo_stroimg/6.2_3.jpg">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/kusuzi/image-folder@master/Redis/jedis_04.jpg">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/kusuzi/image-folder@master/Redis/permenent.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/kusuzi/image-folder@master/Redis/rdb_1.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/kusuzi/image-folder@master/Redis/rdb_2.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/kusuzi/image-folder@master/Redis/rdb_3.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/kusuzi/image-folder@master/Redis/rdb_4.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/kusuzi/image-folder@master/Redis/aof_1.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/kusuzi/image-folder@master/Redis/aof-process.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/kusuzi/image-folder@master/Redis/aof-rewrite.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/kusuzi/image-folder@master/Redis/aof_2.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/kusuzi/image-folder@master/Redis/tx_1.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/kusuzi/image-folder@master/Redis/del_1.png">
@@ -58,7 +60,7 @@
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/kusuzi/image-folder@master/Redis/slot.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/kusuzi/image-folder@master/Redis/cluster_com.png">
 <meta property="article:published_time" content="2021-12-10T09:00:18.000Z">
-<meta property="article:modified_time" content="2021-12-16T11:39:01.603Z">
+<meta property="article:modified_time" content="2021-12-16T12:12:12.062Z">
 <meta property="article:author" content="Kusuzi">
 <meta property="article:tag" content="learn">
 <meta name="twitter:card" content="summary_large_image">
@@ -272,7 +274,7 @@
             <h1 style="display: none">Redis</h1>
             
             <div class="markdown-body">
-              <p> 本篇文章是根据<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1CJ411m7Gc">黑马程序员</a>出品的视频，学习所做的笔记</p>
+              <p> 本篇文章是根据<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1CJ411m7Gc">黑马程序员</a>的视频，学习所做的笔记</p>
 <h1 id="1-Redis的简单介绍"><a href="#1-Redis的简单介绍" class="headerlink" title="1. Redis的简单介绍"></a>1. Redis的简单介绍</h1><p><strong>概念：</strong>Redis (REmote DIctionary Server) 是用 C 语言开发的一个开源的<em>高性能键值对（key-value）数据库。</em></p>
 <p><strong>类型</strong>：非关系型数据库（Nosql）</p>
 <p><strong>特征：</strong></p>
@@ -519,9 +521,9 @@
 <p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1CJ411m7Gc?p=44">代码演示</a></p>
 <p>主程序：</p>
 <p><img src="https://cdn.jsdelivr.net/gh/kusuzi/image-folder@master/Redis/jedis_02.jpg" srcset="/img/loading.gif" lazyload alt="jedis_02"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/kusuzi/image-folder@master/Redis/jedis_03.jpg" srcset="/img/loading.gif" lazyload alt="jedis_03"></p>
-<img src="D:\Typo_stroimg\6.2_3.jpg" srcset="/img/loading.gif" lazyload alt="image-20211214215157937" style="zoom: 67%;" />
+<img src="https://cdn.jsdelivr.net/gh/kusuzi/image-folder@master/Redis/jedis_03.jpg" srcset="/img/loading.gif" lazyload alt="jedis_03"  />
 
+<p><img src="https://cdn.jsdelivr.net/gh/kusuzi/image-folder@master/Redis/jedis_04.jpg" srcset="/img/loading.gif" lazyload alt="jedis_04"></p>
 <h2 id="6-3-jedis简易工具类开发"><a href="#6-3-jedis简易工具类开发" class="headerlink" title="6.3 jedis简易工具类开发"></a>6.3 jedis简易工具类开发</h2><p> JedisPool：Jedis提供的连接池技术</p>
 <p>需要的三个内容：</p>
 <p>poolConfig:连接池配置对象<br>host:redis服务地址<br>port:redis服务端口号</p>
@@ -677,7 +679,9 @@
 <p><strong>工作原理：</strong></p>
 <p><img src="https://cdn.jsdelivr.net/gh/kusuzi/image-folder@master/Redis/aof_1.png" srcset="/img/loading.gif" lazyload alt="aof_1"></p>
 <p><strong>工作流程：</strong></p>
-<p>待落实</p>
+<p><img src="https://cdn.jsdelivr.net/gh/kusuzi/image-folder@master/Redis/aof-process.png" srcset="/img/loading.gif" lazyload alt="aof-process"></p>
+<p>AOF重写流程：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/kusuzi/image-folder@master/Redis/aof-rewrite.png" srcset="/img/loading.gif" lazyload alt="aof-rewrite"></p>
 <h3 id="8-4-RDB-VS-AOF"><a href="#8-4-RDB-VS-AOF" class="headerlink" title="8.4 RDB VS AOF"></a>8.4 RDB VS AOF</h3><p><img src="https://cdn.jsdelivr.net/gh/kusuzi/image-folder@master/Redis/aof_2.png" srcset="/img/loading.gif" lazyload alt="aof_2"></p>
 <ul>
 <li><p>对数据非常敏感，建议使用默认的AOF持久化方案</p>
