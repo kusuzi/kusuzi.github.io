@@ -23,31 +23,46 @@
 <meta property="og:site_name" content="kusuzi">
 <meta property="og:description" content="本篇文章是根据黑马程序员出品的视频，学习所做的笔记 1. Redis的简单介绍概念：Redis (REmote DIctionary Server) 是用 C 语言开发的一个开源的高性能键值对（key-value）数据库。 类型：非关系型数据库（Nosql） 特征：  可扩容，可伸缩 大数据量下高性能 灵活的数据模型 高可用  关键词：单线程、高性能、多数据类型、持久化 2. Redis的应用">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="c:/Users/QUEEN/Pictures/image-20211213201217943.png">
-<meta property="og:image" content="d:/Typo_stroimg/image-20211213201344887.png">
-<meta property="og:image" content="d:/Typo_stroimg/list_1">
-<meta property="og:image" content="d:/Typo_stroimg/set1.png">
-<meta property="og:image" content="d:/Typo_stroimg/sorted_set.png">
-<meta property="og:image" content="d:/Typo_stroimg/sorted_set2.png">
-<meta property="og:image" content="d:/Typo_stroimg/jedis_1">
-<meta property="og:image" content="d:/Typo_stroimg/6.2_1.jpg">
-<meta property="og:image" content="d:/Typo_stroimg/6.2_2.jpg">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/kusuzi/image-folder@master/Redis/string_01.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/kusuzi/image-folder@master/Redis/hash_01.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/kusuzi/image-folder@master/Redis/list_1.jpg">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/kusuzi/image-folder@master/Redis/set1.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/kusuzi/image-folder@master/Redis/sorted_set.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/kusuzi/image-folder@master/Redis/sorted_set2.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/kusuzi/image-folder@master/Redis/jedis_1.jpg">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/kusuzi/image-folder@master/Redis/jedis_02.jpg">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/kusuzi/image-folder@master/Redis/jedis_03.jpg">
 <meta property="og:image" content="d:/Typo_stroimg/6.2_3.jpg">
-<meta property="og:image" content="d:/Typo_stroimg/permenent.png">
-<meta property="og:image" content="d:/Typo_stroimg/rdb_1.png">
-<meta property="og:image" content="d:/Typo_stroimg/rdb_2.png">
-<meta property="og:image" content="d:/Typo_stroimg/rdb_3.png">
-<meta property="og:image" content="d:/Typo_stroimg/rdb_4.png">
-<meta property="og:image" content="d:/Typo_stroimg/aof_1.png">
-<meta property="og:image" content="d:/Typo_stroimg/aof_2.png">
-<meta property="og:image" content="d:/Typo_stroimg/tx_1.png">
-<meta property="og:image" content="d:/Typo_stroimg/del_1.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/kusuzi/image-folder@master/Redis/permenent.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/kusuzi/image-folder@master/Redis/rdb_1.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/kusuzi/image-folder@master/Redis/rdb_2.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/kusuzi/image-folder@master/Redis/rdb_3.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/kusuzi/image-folder@master/Redis/rdb_4.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/kusuzi/image-folder@master/Redis/aof_1.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/kusuzi/image-folder@master/Redis/aof_2.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/kusuzi/image-folder@master/Redis/tx_1.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/kusuzi/image-folder@master/Redis/del_1.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/kusuzi/image-folder@master/Redis/%E4%B8%BB%E4%BB%8E_01.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/kusuzi/image-folder@master/Redis/%E9%9B%86%E7%BE%A4.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/kusuzi/image-folder@master/Redis/主从流程_01.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/kusuzi/image-folder@master/Redis/stage_01.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/kusuzi/image-folder@master/Redis/stage_02.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/kusuzi/image-folder@master/Redis/stage_23.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/kusuzi/image-folder@master/Redis/sential_config.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/kusuzi/image-folder@master/Redis/sential_stage01.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/kusuzi/image-folder@master/Redis/sential_stage02.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/kusuzi/image-folder@master/Redis/sential_stage03.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/kusuzi/image-folder@master/Redis/stage032.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/kusuzi/image-folder@master/Redis/cluster.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/kusuzi/image-folder@master/Redis/slot_cal.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/kusuzi/image-folder@master/Redis/slot.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/kusuzi/image-folder@master/Redis/cluster_com.png">
 <meta property="article:published_time" content="2021-12-10T09:00:18.000Z">
-<meta property="article:modified_time" content="2021-12-15T07:35:58.021Z">
+<meta property="article:modified_time" content="2021-12-16T11:31:27.046Z">
 <meta property="article:author" content="Kusuzi">
 <meta property="article:tag" content="learn">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="c:/Users/QUEEN/Pictures/image-20211213201217943.png">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/kusuzi/image-folder@master/Redis/string_01.png">
   
   <title>Redis - kusuzi</title>
 
@@ -216,7 +231,7 @@
   
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      9.9k 字
+      18k 字
     </span>
   
 
@@ -225,7 +240,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      31 分钟
+      55 分钟
     </span>
   
 
@@ -332,16 +347,13 @@
 </li>
 </ul>
 <p><strong>业务场景</strong>：主页高频访问信息显示控制，例如新浪微博大V主页显示粉丝数与微博数量</p>
-<p><img src="C:\Users\QUEEN\Pictures\image-20211213201217943.png" srcset="/img/loading.gif" lazyload alt="image-20211213201217943"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/kusuzi/image-folder@master/Redis/string_01.png" srcset="/img/loading.gif" lazyload alt="string_01"></p>
 <h2 id="4-2-hash"><a href="#4-2-hash" class="headerlink" title="4.2 hash"></a>4.2 hash</h2><ul>
 <li>新的存储需求：对一系列存储的数据进行编组，方便管理，典型应用存储对象信息</li>
 <li>需要的存储结构：一个存储空间保存多个键值对数据</li>
 <li>hash类型：底层使用哈希表结构实现数据存储</li>
 </ul>
-<p><img src="D:\Typo_stroimg\image-20211213201344887.png" srcset="/img/loading.gif" lazyload alt="image-20211213201344887"></p>
-<ol>
-<li><strong>基本命令</strong></li>
-</ol>
+<p><img src="https://cdn.jsdelivr.net/gh/kusuzi/image-folder@master/Redis/hash_01.png" srcset="/img/loading.gif" lazyload alt="hash_01"></p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs java">hset key field value         [添加/修改数据]<br>hget key field               [获取数据]<br>hgetall key                  <br>hdel key field1 [field2]     [删除数据]      <br></code></pre></td></tr></table></figure>
 
 <ol start="2">
@@ -370,7 +382,7 @@
 <li>需要的存储结构：一个存储空间保存多个数据，且通过数据可以体现进入顺序</li>
 <li>list类型：保存多个数据，底层使用<strong>双向链表</strong>存储结构实现</li>
 </ul>
-<p><img src="D:\Typo_stroimg\list_1" srcset="/img/loading.gif" lazyload alt="image-20211213202521627"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/kusuzi/image-folder@master/Redis/list_1.jpg" srcset="/img/loading.gif" lazyload alt="list_1"></p>
 <ol>
 <li><p><strong>基本命令</strong></p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs java">lpush key value1 [value2] ……        【 添加/修改数据】<br>rpush key value1 [value2] ……<br>  <br>lrange key start stop                【获取数据】<br>lindex key index<br>llen key <br>    <br>lpop key                            【获取并移除数据】<br>rpop key<br></code></pre></td></tr></table></figure></li>
@@ -400,7 +412,7 @@
 <li><p>需要的存储结构：能够保存大量的数据，高效的内部存储机制，便于查询</p>
 </li>
 <li><p>set类型：与hash存储结构完全相同，仅存储键，不存储值（nil），并且值是不允许重复的</p>
-<p><img src="D:\Typo_stroimg\set1.png" srcset="/img/loading.gif" lazyload alt="image-20211213203559389"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/kusuzi/image-folder@master/Redis/set1.png" srcset="/img/loading.gif" lazyload alt="set1"></p>
 </li>
 </ul>
 <ol>
@@ -438,7 +450,7 @@
 <li><p>需要的存储结构：新的存储模型，可以保存可排序的数据</p>
 </li>
 <li><p>sorted_set类型：在set的存储结构基础上添加<strong>可排序字段</strong></p>
-<p><img src="D:\Typo_stroimg\sorted_set.png" srcset="/img/loading.gif" lazyload alt="image-20211213204419207"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/kusuzi/image-folder@master/Redis/sorted_set.png" srcset="/img/loading.gif" lazyload alt="sorted_set"></p>
 </li>
 </ul>
 <ol>
@@ -471,9 +483,9 @@
 </li>
 </ol>
 <h2 id="4-6-数据类型实践案例"><a href="#4-6-数据类型实践案例" class="headerlink" title="4.6 数据类型实践案例"></a>4.6 数据类型实践案例</h2><p>业务场景：</p>
-<p><img src="D:\Typo_stroimg\sorted_set2.png" srcset="/img/loading.gif" lazyload alt="image-20211213205120772"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/kusuzi/image-folder@master/Redis/sorted_set2.png" srcset="/img/loading.gif" lazyload alt="sorted_set2"></p>
 <p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1CJ411m7Gc?p=32">代码实现</a></p>
-<h1 id="5-Redis-通用指令"><a href="#5-Redis-通用指令" class="headerlink" title="5. Redis 通用指令"></a>5. Redis 通用指令</h1><h1 id="5-1-key-通用指令"><a href="#5-1-key-通用指令" class="headerlink" title="5.1 key 通用指令"></a>5.1 key 通用指令</h1><figure class="highlight maxima"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs maxima">keys *       [查看所有的<span class="hljs-built_in">key</span>]<br><span class="hljs-built_in">del</span> <span class="hljs-built_in">key</span>      [删除指定的<span class="hljs-built_in">key</span>]<br>exists <span class="hljs-built_in">key</span>   [获取<span class="hljs-built_in">key</span>是否存在]<br>type <span class="hljs-built_in">key</span>     [获取<span class="hljs-built_in">key</span>的类型]<br>expire <span class="hljs-built_in">key</span> seconds [设置指定<span class="hljs-built_in">key</span>的有效期]<br>ttl <span class="hljs-built_in">key</span>       [获取指定<span class="hljs-built_in">key</span>的有效时间]<br>pttl <span class="hljs-built_in">key</span><br><span class="hljs-built_in">rename</span> <span class="hljs-built_in">key</span> newkey   [为<span class="hljs-built_in">key</span>改名]<br>renamenx <span class="hljs-built_in">key</span> newkey<br></code></pre></td></tr></table></figure>
+<h1 id="5-Redis-通用指令"><a href="#5-Redis-通用指令" class="headerlink" title="5. Redis 通用指令"></a>5. Redis 通用指令</h1><h2 id="5-1-key-通用指令"><a href="#5-1-key-通用指令" class="headerlink" title="5.1 key 通用指令"></a>5.1 key 通用指令</h2><figure class="highlight maxima"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs maxima">keys *       [查看所有的<span class="hljs-built_in">key</span>]<br><span class="hljs-built_in">del</span> <span class="hljs-built_in">key</span>      [删除指定的<span class="hljs-built_in">key</span>]<br>exists <span class="hljs-built_in">key</span>   [获取<span class="hljs-built_in">key</span>是否存在]<br>type <span class="hljs-built_in">key</span>     [获取<span class="hljs-built_in">key</span>的类型]<br>expire <span class="hljs-built_in">key</span> seconds [设置指定<span class="hljs-built_in">key</span>的有效期]<br>ttl <span class="hljs-built_in">key</span>       [获取指定<span class="hljs-built_in">key</span>的有效时间]<br>pttl <span class="hljs-built_in">key</span><br><span class="hljs-built_in">rename</span> <span class="hljs-built_in">key</span> newkey   [为<span class="hljs-built_in">key</span>改名]<br>renamenx <span class="hljs-built_in">key</span> newkey<br></code></pre></td></tr></table></figure>
 
 <h2 id="5-2-数据库通用指令"><a href="#5-2-数据库通用指令" class="headerlink" title="5.2 数据库通用指令"></a>5.2 数据库通用指令</h2><ul>
 <li><p>redis为每个服务提供有16个数据库，编号从0到15</p>
@@ -481,7 +493,7 @@
 <li><p>每个数据库之间的数据相互独立</p>
 <figure class="highlight sas"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs sas"><span class="hljs-meta">select</span> <span class="hljs-meta">index</span>   [切换数据库]<br><span class="hljs-keyword">quit</span><br><span class="hljs-keyword"></span>move <span class="hljs-meta">key</span> db    [数据移动]<br>dbsize         [数据清除]<br>flushdb<br>flushall<br></code></pre></td></tr></table></figure></li>
 </ul>
-<h1 id="6-Jedis"><a href="#6-Jedis" class="headerlink" title="6 Jedis"></a>6 Jedis</h1><h2 id="6-1-准备工作"><a href="#6-1-准备工作" class="headerlink" title="6.1 准备工作"></a>6.1 准备工作</h2><ul>
+<h1 id="6-Jedis"><a href="#6-Jedis" class="headerlink" title="6. Jedis"></a>6. Jedis</h1><h2 id="6-1-准备工作"><a href="#6-1-准备工作" class="headerlink" title="6.1 准备工作"></a>6.1 准备工作</h2><ul>
 <li><p>导入jedis坐标</p>
 <blockquote>
 <dependency>
@@ -503,13 +515,11 @@
 </blockquote>
 </li>
 </ul>
-<h2 id="6-2-案例"><a href="#6-2-案例" class="headerlink" title="6.2 案例"></a>6.2 案例</h2><p><img src="D:\Typo_stroimg\jedis_1" srcset="/img/loading.gif" lazyload alt="image-20211213212103850"></p>
+<h2 id="6-2-案例"><a href="#6-2-案例" class="headerlink" title="6.2 案例"></a>6.2 案例</h2><p><img src="https://cdn.jsdelivr.net/gh/kusuzi/image-folder@master/Redis/jedis_1.jpg" srcset="/img/loading.gif" lazyload alt="jedis_1"></p>
 <p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1CJ411m7Gc?p=44">代码演示</a></p>
 <p>主程序：</p>
-<img src="D:\Typo_stroimg\6.2_1.jpg" srcset="/img/loading.gif" lazyload alt="image-20211214214847661" style="zoom:67%;" />
-
-<img src="D:\Typo_stroimg\6.2_2.jpg" srcset="/img/loading.gif" lazyload alt="image-20211214214933718"  />
-
+<p><img src="https://cdn.jsdelivr.net/gh/kusuzi/image-folder@master/Redis/jedis_02.jpg" srcset="/img/loading.gif" lazyload alt="jedis_02"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/kusuzi/image-folder@master/Redis/jedis_03.jpg" srcset="/img/loading.gif" lazyload alt="jedis_03"></p>
 <img src="D:\Typo_stroimg\6.2_3.jpg" srcset="/img/loading.gif" lazyload alt="image-20211214215157937" style="zoom: 67%;" />
 
 <h2 id="6-3-jedis简易工具类开发"><a href="#6-3-jedis简易工具类开发" class="headerlink" title="6.3 jedis简易工具类开发"></a>6.3 jedis简易工具类开发</h2><p> JedisPool：Jedis提供的连接池技术</p>
@@ -555,7 +565,7 @@
 <li><p> 将当前数据状态进行保存，快照形式，存储数据结果，存储格式简单，关注点在数据</p>
 </li>
 <li><p>将数据的操作过程进行保存，日志形式，存储操作过程，存储格式复杂，关注点在数据的操作过程</p>
-<p><img src="D:\Typo_stroimg\permenent.png" srcset="/img/loading.gif" lazyload alt="image-20211213213812521"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/kusuzi/image-folder@master/Redis/permenent.png" srcset="/img/loading.gif" lazyload alt="permenent"></p>
 </li>
 </ul>
 <h2 id="8-2-RDB"><a href="#8-2-RDB" class="headerlink" title="8.2 RDB"></a>8.2 RDB</h2><h3 id="8-2-1RDB启动方式-——-save指令"><a href="#8-2-1RDB启动方式-——-save指令" class="headerlink" title="8.2.1RDB启动方式 —— save指令"></a>8.2.1<strong>RDB启动方式 —— save指令</strong></h3><blockquote>
@@ -563,16 +573,16 @@
 <p>作用：手动执行一次保存操作</p>
 </blockquote>
 <p>相关配置：</p>
-<p><img src="D:\Typo_stroimg\rdb_1.png" srcset="/img/loading.gif" lazyload alt="image-20211213214017210"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/kusuzi/image-folder@master/Redis/rdb_1.png" srcset="/img/loading.gif" lazyload alt="rdb_1"></p>
 <p>save工作原理：</p>
-<p><img src="D:\Typo_stroimg\rdb_2.png" srcset="/img/loading.gif" lazyload alt="image-20211213214124002"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/kusuzi/image-folder@master/Redis/rdb_2.png" srcset="/img/loading.gif" lazyload alt="rdb_2"></p>
 <p><strong>注意：save指令的执行会<u>阻塞当前Redis服务器，</u>直到当前RDB过程完成为止，有可能会造成长时间阻塞，线上环境不建议使用。</strong></p>
 <h3 id="8-2-2-RDB启动方式-——-bgsave指令"><a href="#8-2-2-RDB启动方式-——-bgsave指令" class="headerlink" title="8.2.2 RDB启动方式 —— bgsave指令"></a>8.2.2 RDB启动方式 —— bgsave指令</h3><blockquote>
 <p>bgsave</p>
 <p>作用：手动启动后台保存操作，但不是立即执行</p>
 </blockquote>
 <p>bgsave工作原理：</p>
-<p><img src="D:\Typo_stroimg\rdb_3.png" srcset="/img/loading.gif" lazyload alt="image-20211213214351056"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/kusuzi/image-folder@master/Redis/rdb_3.png" srcset="/img/loading.gif" lazyload alt="rdb_3"></p>
 <p>注意： bgsave命令是针对save阻塞问题做的优化。Redis内部所有涉及到RDB操作都采用bgsave的方式，save命令可以放弃使用</p>
 <p>以上两种方式均为手动保存，通过配置文件的方式是自动保存</p>
 <h3 id="8-2-3-RDB启动方式-——save配置"><a href="#8-2-3-RDB启动方式-——save配置" class="headerlink" title="8.2.3 RDB启动方式 ——save配置"></a>8.2.3 RDB启动方式 ——save配置</h3><ul>
@@ -593,7 +603,7 @@
 </blockquote>
 <p>注意：save配置启动后执行的是bgsave操作</p>
 <p>RDB三种启动方式对比</p>
-<p><img src="D:\Typo_stroimg\rdb_4.png" srcset="/img/loading.gif" lazyload alt="image-20211213215111676"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/kusuzi/image-folder@master/Redis/rdb_4.png" srcset="/img/loading.gif" lazyload alt="rdb_4"></p>
 </li>
 </ul>
 <h3 id="8-2-4-总结"><a href="#8-2-4-总结" class="headerlink" title="8.2.4 总结"></a>8.2.4 总结</h3><p><strong>优点：</strong></p>
@@ -665,10 +675,10 @@
 <p>auto-aof-rewrite-min-size size<br>auto-aof-rewrite-percentage percentage</p>
 </blockquote>
 <p><strong>工作原理：</strong></p>
-<p><img src="D:\Typo_stroimg\aof_1.png" srcset="/img/loading.gif" lazyload alt="image-20211213220205677"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/kusuzi/image-folder@master/Redis/aof_1.png" srcset="/img/loading.gif" lazyload alt="aof_1"></p>
 <p><strong>工作流程：</strong></p>
 <p>待落实</p>
-<h3 id="8-4-RDB-VS-AOF"><a href="#8-4-RDB-VS-AOF" class="headerlink" title="8.4 RDB VS AOF"></a>8.4 RDB VS AOF</h3><p><img src="D:\Typo_stroimg\aof_2.png" srcset="/img/loading.gif" lazyload alt="image-20211213220447003"></p>
+<h3 id="8-4-RDB-VS-AOF"><a href="#8-4-RDB-VS-AOF" class="headerlink" title="8.4 RDB VS AOF"></a>8.4 RDB VS AOF</h3><p><img src="https://cdn.jsdelivr.net/gh/kusuzi/image-folder@master/Redis/aof_2.png" srcset="/img/loading.gif" lazyload alt="aof_2"></p>
 <ul>
 <li><p>对数据非常敏感，建议使用默认的AOF持久化方案</p>
 <ul>
@@ -696,7 +706,7 @@
 </ul>
 </li>
 </ul>
-<h1 id="9、-Redis事务"><a href="#9、-Redis事务" class="headerlink" title="9、 Redis事务"></a>9、 Redis事务</h1><h2 id="9-1-事务简介"><a href="#9-1-事务简介" class="headerlink" title="9.1 事务简介"></a>9.1 事务简介</h2><p>redis事务就是一个命令执行的队列，将一系列预定义命令包装成一个整体（一个队列）。当执行时，一次性<br>按照添加顺序依次执行，中间不会被打断或者干扰。一个队列中，一次性、顺序性、排他性的执行一系列命令。</p>
+<h1 id="9-Redis事务"><a href="#9-Redis事务" class="headerlink" title="9. Redis事务"></a>9. Redis事务</h1><h2 id="9-1-事务简介"><a href="#9-1-事务简介" class="headerlink" title="9.1 事务简介"></a>9.1 事务简介</h2><p>redis事务就是一个命令执行的队列，将一系列预定义命令包装成一个整体（一个队列）。当执行时，一次性<br>按照添加顺序依次执行，中间不会被打断或者干扰。一个队列中，一次性、顺序性、排他性的执行一系列命令。</p>
 <h2 id="9-2-事务基本操作"><a href="#9-2-事务基本操作" class="headerlink" title="9.2 事务基本操作"></a>9.2 事务基本操作</h2><h3 id="9-2-1-基本命令"><a href="#9-2-1-基本命令" class="headerlink" title="9.2.1 基本命令"></a>9.2.1 基本命令</h3><ul>
 <li> 开启事务</li>
 </ul>
@@ -725,7 +735,7 @@
 <ul>
 <li><p>作用</p>
 <p>终止当前事务的定义，发生在multi之后，exec之前</p>
-<h3 id="9-2-2-事务的工作流程"><a href="#9-2-2-事务的工作流程" class="headerlink" title="9.2.2 事务的工作流程"></a>9.2.2 事务的工作流程</h3><p><img src="D:\Typo_stroimg\tx_1.png" srcset="/img/loading.gif" lazyload alt="image-20211215114250295"></p>
+<h3 id="9-2-2-事务的工作流程"><a href="#9-2-2-事务的工作流程" class="headerlink" title="9.2.2 事务的工作流程"></a>9.2.2 事务的工作流程</h3><p><img src="https://cdn.jsdelivr.net/gh/kusuzi/image-folder@master/Redis/tx_1.png" srcset="/img/loading.gif" lazyload alt="tx_1"></p>
 </li>
 </ul>
 <h3 id="9-2-3-事务的注意事项"><a href="#9-2-3-事务的注意事项" class="headerlink" title="9.2.3 事务的注意事项"></a>9.2.3 事务的注意事项</h3><ul>
@@ -810,7 +820,7 @@
 </li>
 <li><p>定期删除</p>
 <p><strong>时效性数据的存储结构</strong></p>
-<p><img src="D:\Typo_stroimg\del_1.png" srcset="/img/loading.gif" lazyload alt="image-20211215115938358"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/kusuzi/image-folder@master/Redis/del_1.png" srcset="/img/loading.gif" lazyload alt="del_1"></p>
 </li>
 </ol>
 <h3 id="10-2-1-定时删除"><a href="#10-2-1-定时删除" class="headerlink" title="10.2.1 定时删除"></a>10.2.1 定时删除</h3><ul>
@@ -829,7 +839,555 @@
 <li> 缺点：内存压力很大，出现长期占用内存的数据</li>
 <li>总结：用存储空间换取处理器性能（拿空间换时间)<br>会用到expireIfNeeded()函数</li>
 </ul>
-<h3 id="10-2-3-定期删除"><a href="#10-2-3-定期删除" class="headerlink" title="10.2.3 定期删除"></a>10.2.3 定期删除</h3><h2 id="10-3-逐出算法（淘汰算法）"><a href="#10-3-逐出算法（淘汰算法）" class="headerlink" title="10.3 逐出算法（淘汰算法）"></a>10.3 逐出算法（淘汰算法）</h2>
+<h3 id="10-2-3-定期删除"><a href="#10-2-3-定期删除" class="headerlink" title="10.2.3 定期删除"></a>10.2.3 定期删除</h3><p><strong>定时轮询，对每个库进行轮询</strong></p>
+<ul>
+<li><p>Redis启动服务器初始化时，读取配置server.hz的值，默认为10</p>
+</li>
+<li><p>每秒钟执行server.hz次<strong>serverCron()</strong>——&gt;<strong>databasesCron()</strong>——–&gt;<strong>activeExpireCycle()</strong></p>
+</li>
+<li><p> <font color='red'>activeExpireCycle()</font>对每个expires[*]逐一进行检测，每次执行250ms/server.hz</p>
+</li>
+<li><p>*对某个expires[*]检测时，随机挑选W个key检测</p>
+</li>
+<li><p>如果key超时，删除key</p>
+</li>
+<li><p>如果一轮中删除的key的数量&gt;W*25%，循环该过程</p>
+</li>
+<li><p>如果一轮中删除的key的数量≤W<em>25%，检查下一个expires[</em>]，0-15循环</p>
+</li>
+<li><p>W取值=ACTIVE_EXPIRE_CYCLE_LOOKUPS_PER_LOOP属性值</p>
+</li>
+<li><p> 参数current_db用于记录<font color='red'>activeExpireCycle() </font>进入哪个expires[*] 执行</p>
+</li>
+<li><p>如果<font color='red'>activeExpireCycle()</font>执行时间到期，下次从current_db继续向下执行</p>
+</li>
+</ul>
+<p>总结：</p>
+<ol>
+<li>周期性轮询redis库中的时效性数据，采用随机抽取的策略，利用过期数据占比的方式控制删除频度</li>
+<li>特点1：CPU性能占用设置有峰值，检测频度可自定义设置</li>
+<li>特点2：内存压力不是很大，长期占用内存的冷数据会被持续清理</li>
+<li>总结：周期性抽查存储空间（随机抽查，重点抽查）</li>
+</ol>
+<h2 id="10-2-4-删除策略比对"><a href="#10-2-4-删除策略比对" class="headerlink" title="10.2.4 删除策略比对"></a>10.2.4 删除策略比对</h2><table>
+<thead>
+<tr>
+<th>定期删除</th>
+<th>内存定期随机清理</th>
+<th>每秒花费固定的CPU资源维护内存</th>
+<th>随机抽查，重点抽查</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>定时删除</td>
+<td>节约内存，无占用</td>
+<td>不分时段占用CPU资源，频度高</td>
+<td>拿时间换空间</td>
+</tr>
+<tr>
+<td>惰性删除</td>
+<td>内存占用严重</td>
+<td>延时执行，CPU利用率高</td>
+<td>拿空间换时间</td>
+</tr>
+</tbody></table>
+<h2 id="10-3-逐出算法（淘汰算法）"><a href="#10-3-逐出算法（淘汰算法）" class="headerlink" title="10.3 逐出算法（淘汰算法）"></a>10.3 逐出算法（淘汰算法）</h2><p>问题：当新数据进入redis时，如果内存不足怎么办？</p>
+<ul>
+<li>Redis使用内存存储数据，在执行每一个命令前，会调用<font color='red'>freeMemoryIfNeeded()</font>检测内存是否充足。如<br>果内存不满足新加入数据的最低存储要求，redis要临时删除一些数据为当前指令清理存储空间。清理数据<br>的策略称为逐出算法。</li>
+<li>注意：逐出数据的过程不是100%能够清理出足够的可使用的内存空间，如果不成功则反复执行。当对所<br>有数据尝试完毕后，如果不能达到内存清理的要求，将出现错误信息。</li>
+</ul>
+<h3 id="10-3-1-影响数据逐出的相关配置"><a href="#10-3-1-影响数据逐出的相关配置" class="headerlink" title="10.3.1. 影响数据逐出的相关配置"></a>10.3.1. 影响数据逐出的相关配置</h3><ul>
+<li><p>最大可使用内存</p>
+<blockquote>
+<p>maxmemory</p>
+</blockquote>
+<p>占用物理内存的比例，默认值为0，表示不限制。生产环境中根据需求设定，通常设置在50%以上。</p>
+</li>
+<li><p>每次选取待删除数据的个数</p>
+<blockquote>
+<p>maxmemory-samples</p>
+</blockquote>
+<p>选取数据时并不会全库扫描，导致严重的性能消耗，降低读写性能。因此采用随机获取数据的方式作为待检测删除数据</p>
+</li>
+<li><p> 删除策略</p>
+</li>
+</ul>
+<blockquote>
+<p>maxmemory-policy</p>
+</blockquote>
+<p>  达到最大内存后的，对被挑选出来的数据进行删除的策略</p>
+<h3 id="10-3-2-逐出算法种类"><a href="#10-3-2-逐出算法种类" class="headerlink" title="10.3.2. 逐出算法种类"></a>10.3.2. 逐出算法种类</h3><ol>
+<li>检测易失数据（可能会过期的数据集server.db[i].expires ）<br>① volatile-lru：挑选最近最少使用的数据淘汰<br>② volatile-lfu：挑选最近使用次数最少的数据淘汰<br>③ volatile-ttl：挑选将要过期的数据淘汰<br>④ volatile-random：任意选择数据淘汰</li>
+<li>检测全库数据（所有数据集server.db[i].dict ）<br>⑤ allkeys-lru：挑选最近最少使用的数据淘汰<br>⑥ allkeys-lfu：挑选最近使用次数最少的数据淘汰<br>⑦ allkeys-random：任意选择数据淘汰</li>
+<li>放弃数据驱逐<br>⑧ no-enviction（驱逐）：禁止驱逐数据（redis4.0中默认策略），会引发错误OOM（Out Of Memory）</li>
+</ol>
+<p><strong>数据逐出策略配置依据</strong><br> 使用INFO命令输出监控信息，查询缓存 hit 和 miss 的次数，根据业务需求调优Redis配置</p>
+<h1 id="11-主从复制"><a href="#11-主从复制" class="headerlink" title="11. 主从复制"></a>11. 主从复制</h1><h2 id="11-1-主从复制简介"><a href="#11-1-主从复制简介" class="headerlink" title="11.1. 主从复制简介"></a>11.1. 主从复制简介</h2><h3 id="11-1-1-互联网“三高”架构"><a href="#11-1-1-互联网“三高”架构" class="headerlink" title="11.1.1. 互联网“三高”架构"></a>11.1.1. 互联网“三高”架构</h3><ul>
+<li> 高并发</li>
+<li>高性能</li>
+<li> 高可用</li>
+</ul>
+<p><strong>单机redis的风险与问题</strong></p>
+<ul>
+<li>问题1.机器故障<pre><code>    现象：硬盘故障、系统崩溃
+    本质：数据丢失，很可能对业务造成灾难性打击
+     结论：基本上会放弃使用redis.
+</code></pre>
+</li>
+<li>问题2.容量瓶颈<pre><code>    现象：内存不足，从16G升级到64G，从64G升级到128G，无限升级内存
+   本质：穷，硬件条件跟不上
+   结论：放弃使用redis
+</code></pre>
+</li>
+<li>结论：<pre><code>   为了避免单点Redis服务器故障，准备多台服务器，互相连通。将数据复制多个副本保存在不同的服
+   务器上，连接在一起，并保证数据是同步的。即使有其中一台服务器宕机，其他服务器依然可以继续
+  提供服务，实现Redis的高可用，同时实现数据冗余备份。
+</code></pre>
+</li>
+</ul>
+<h4 id="11-1-2-多台服务器连接方案"><a href="#11-1-2-多台服务器连接方案" class="headerlink" title="11.1.2. 多台服务器连接方案"></a>11.1.2. 多台服务器连接方案</h4><ul>
+<li><p>提供数据方：master</p>
+<ul>
+<li>主服务器，主节点，主库</li>
+<li>主客户端</li>
+</ul>
+</li>
+<li><p>接收数据方：slave</p>
+<ul>
+<li>从服务器，从节点，从库</li>
+<li>从客户端</li>
+</ul>
+</li>
+<li><p>需要解决的问题：</p>
+<ul>
+<li>数据同步</li>
+</ul>
+</li>
+<li><p>核心工作：</p>
+<ul>
+<li><p>master的数据复制到slave中</p>
+<p><img src="https://cdn.jsdelivr.net/gh/kusuzi/image-folder@master/Redis/%E4%B8%BB%E4%BB%8E_01.png" srcset="/img/loading.gif" lazyload alt="主从_01"></p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="11-1-3-主从复制的作用"><a href="#11-1-3-主从复制的作用" class="headerlink" title="11.1.3. 主从复制的作用"></a>11.1.3. 主从复制的作用</h3><p>主从复制即将master中的数据即时、有效的复制到slave中<br>特征：一个master可以拥有多个slave，一个slave只对应一个master</p>
+<p>职责：</p>
+<ul>
+<li><p>master:</p>
+<ul>
+<li>写数据</li>
+<li>执行写操作时，将出现变化的数据自动同步到slave</li>
+<li> 读数据（可忽略）</li>
+</ul>
+</li>
+<li><p>slave:</p>
+<ul>
+<li> 读数据</li>
+<li>写数据（禁止）</li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/kusuzi/image-folder@master/Redis/%E9%9B%86%E7%BE%A4.png" srcset="/img/loading.gif" lazyload alt="集群"></p>
+</li>
+<li><p>读写分离：master写、slave读，提高服务器的读写负载能力</p>
+</li>
+<li><p> 负载均衡：基于主从结构，配合读写分离，由slave分担master负载，并根据需求的变化，改变slave的数量，通过多个从节点分担数据读取负载，大大提高Redis服务器并发量与数据吞吐量</p>
+</li>
+<li><p>故障恢复：当master出现问题时，由slave提供服务，实现快速的故障恢复</p>
+</li>
+<li><p>数据冗余：实现数据热备份，是持久化之外的一种数据冗余方式</p>
+</li>
+<li><p>高可用基石：基于主从复制，构建哨兵模式与集群，实现Redis的高可用方案</p>
+</li>
+</ul>
+<h2 id="11-2-主从复制工作流程"><a href="#11-2-主从复制工作流程" class="headerlink" title="11.2. 主从复制工作流程"></a>11.2. 主从复制工作流程</h2><p>主从复制过程大体可以分为3个阶段<br> 建立连接阶段（即准备阶段）<br> 数据同步阶段<br> 命令传播阶段</p>
+<img src="https://cdn.jsdelivr.net/gh/kusuzi/image-folder@master/Redis/主从流程_01.png" srcset="/img/loading.gif" lazyload alt="主从流程_01" style="zoom:67%;" />
+
+<h3 id="11-2-1-阶段一：建立连接阶段"><a href="#11-2-1-阶段一：建立连接阶段" class="headerlink" title="11.2.1 阶段一：建立连接阶段"></a>11.2.1 阶段一：建立连接阶段</h3><ul>
+<li> 建立slave到master的连接，使master能够识别slave，并保存slave端口号</li>
+</ul>
+<p>步骤1：设置master的地址和端口，客户端保存master信息<br>步骤2：建立socket连接<br>步骤3：发送ping命令（定时器任务）<br>步骤4：身份验证<br>步骤5：发送slave端口信息<br>至此，主从连接成功！<br><strong>状态：</strong><br>slave：保存master的地址与端口<br>master：保存slave的端口<br><strong>总体：</strong><br>之间创建了连接的socket</p>
+<img src="https://cdn.jsdelivr.net/gh/kusuzi/image-folder@master/Redis/stage_01.png" srcset="/img/loading.gif" lazyload alt="stage_01" style="zoom:67%;" />
+
+<p>主从连接（slave连接master）：</p>
+<ol>
+<li><p>方式一：客户端发送命令</p>
+<blockquote>
+<p>slaveof <masterip> <masterport>  [从主动连接]</p>
+</blockquote>
+</li>
+<li><p>方式二：启动服务器参数</p>
+<blockquote>
+<p>redis-server -slaveof <masterip> <masterport></p>
+</blockquote>
+</li>
+<li><p>方式三：服务器配置</p>
+<blockquote>
+<p>slaveof <masterip> <masterport>   [在配置文件中配置，启动这个配置文件时，就会有主从结构]</p>
+</blockquote>
+</li>
+</ol>
+<p>主从断开连接:</p>
+<ol>
+<li><p>客户端发送命令</p>
+<blockquote>
+<p>slaveof no one</p>
+<p>attention:   slave断开连接后，不会删除已有数据，只是不再接受master发送的数据</p>
+</blockquote>
+</li>
+</ol>
+<ul>
+<li> 授权访问</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>1 master客户端发送命令设置密码</th>
+<th>1 slave客户端发送命令设置密码</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>requirepass <password></td>
+<td>auth <password></td>
+</tr>
+<tr>
+<td>2 master配置文件设置密码</td>
+<td>2 slave配置文件设置密码</td>
+</tr>
+<tr>
+<td>config set requirepass <password></td>
+<td>masterauth <password></td>
+</tr>
+<tr>
+<td>config get requirepass</td>
+<td>3 slave启动服务器设置密码</td>
+</tr>
+<tr>
+<td></td>
+<td>redis-server –a <password></td>
+</tr>
+</tbody></table>
+<h3 id="11-2-2-阶段二：数据同步阶段工作流程"><a href="#11-2-2-阶段二：数据同步阶段工作流程" class="headerlink" title="11.2.2 阶段二：数据同步阶段工作流程"></a>11.2.2 阶段二：数据同步阶段工作流程</h3><ul>
+<li>在slave初次连接master后，复制master中的所有数据到slave</li>
+<li> 将slave的数据库状态更新成master当前的数据库状态</li>
+</ul>
+<p>步骤1：请求同步数据<br>步骤2：创建RDB同步数据<br>步骤3：恢复RDB同步数据<br>步骤4：请求部分同步数据<br>步骤5：恢复部分同步数据<br>至此，数据同步工作完成！ </p>
+<p><strong>状态：</strong><br>slave：具有master端全部数据，包含RDB过程接收的数据<br>master：保存slave当前数据同步的位置<br><strong>总体：</strong><br>之间完成了数据克隆</p>
+<img src="https://cdn.jsdelivr.net/gh/kusuzi/image-folder@master/Redis/stage_02.png" srcset="/img/loading.gif" lazyload alt="stage_02" style="zoom:67%;" />
+
+<p><strong>数据同步阶段master说明</strong></p>
+<ol>
+<li><p>如果master数据量巨大，数据同步阶段应避开流量高峰期，避免造成master阻塞，影响业务正常执行</p>
+</li>
+<li><p>复制缓冲区大小设定不合理，会导致数据溢出。如进行全量复制周期太长，进行部分复制时发现数据已经存在丢失的情况，必须进行第二次全量复制，致使slave陷入死循环状态。</p>
+</li>
+</ol>
+<blockquote>
+<p>repl-backlog-size 1mb     [master修改复制缓冲区的大小]</p>
+</blockquote>
+<ol start="3">
+<li>master单机内存占用主机内存的比例不应过大，建议使用50%-70%的内存，留下30%-50%的内存用于执行bgsave命令和创建复制缓冲区</li>
+</ol>
+<p><strong>数据同步阶段slave说明</strong></p>
+<ol>
+<li><p>为避免slave进行全量复制、部分复制时服务器响应阻塞或数据不同步，建议关闭此期间的对外服务</p>
+<blockquote>
+<p>slave-serve-stale-data yes|no</p>
+</blockquote>
+</li>
+<li><p>数据同步阶段，master发送给slave信息可以理解master是slave的一个客户端，主动向slave发送命令</p>
+</li>
+<li><p>多个slave同时对master请求数据同步，master发送的RDB文件增多，会对带宽造成巨大冲击，如果master带宽不足，因此数据同步需要根据业务需求，适量错峰</p>
+</li>
+<li><p>slave过多时，建议调整拓扑结构，由一主多从结构变为树状结构，中间的节点既是master，也是slave。注意使用树状结构时，由于层级深度，导致深度越高的slave与最顶层master间数据同步延迟较大，数据一致性变差，应谨慎选择</p>
+</li>
+</ol>
+<h3 id="11-2-3-命令传播阶段"><a href="#11-2-3-命令传播阶段" class="headerlink" title="11.2.3 命令传播阶段"></a>11.2.3 命令传播阶段</h3><ul>
+<li><p>当master数据库状态被修改后，导致主从服务器数据库状态不一致，此时需要让主从数据同步到一致的<br>状态，同步的动作称为命令传播</p>
+</li>
+<li><p>master将接收到的数据变更命令发送给slave，slave接收命令后执行命令</p>
+</li>
+</ul>
+<p>不同情况发生时，命令传播阶段会采用不同的数据同步方法</p>
+<ul>
+<li> 网络闪断闪连           忽略</li>
+<li>短时间网络中断        部分复制</li>
+<li>长时间网络中断       全量复制</li>
+</ul>
+<p>部分复制的三个核心要素</p>
+<ol>
+<li><p>服务器的运行 id（run id）</p>
+<blockquote>
+<p>概念：服务器运行ID是每一台服务器每次运行的身份识别码，一台服务器多次运行可以生成多个运行id</p>
+<p>作用：运行id被用于在服务器间进行传输，识别身份如果想两次操作均对同一台服务器进行，必须每次操作携带对应的运行id，用于对方识别</p>
+<p>实现方式：运行id在每台服务器启动时自动生成的，master在首次连接slave时，会将自己的运行ID发送给slave，slave保存此ID，通过info Server命令，可以查看节点的runid</p>
+</blockquote>
+</li>
+<li><p> 主服务器的复制积压缓冲区</p>
+</li>
+</ol>
+<blockquote>
+<p>概念：复制缓冲区，又名复制积压缓冲区，是一个先进先出（FIFO）的队列，用于存储服务器执行过的命令，每次传播命令，master都会将传播的命令记录下来，并存储在复制缓冲区</p>
+</blockquote>
+<ol start="3">
+<li><p>主从服务器的复制偏移量</p>
+<blockquote>
+<p>概念：一个数字，描述复制缓冲区中的指令字节位置</p>
+<p>作用：同步信息，比对master与slave的差异，当slave断线后，恢复数据使用</p>
+</blockquote>
+</li>
+</ol>
+<p><font color='red'>数据同步+命令传播阶段工作流程</font></p>
+<p><img src="https://cdn.jsdelivr.net/gh/kusuzi/image-folder@master/Redis/stage_23.png" srcset="/img/loading.gif" lazyload alt="stage_23"></p>
+<h3 id="11-2-4-心跳机制"><a href="#11-2-4-心跳机制" class="headerlink" title="11.2.4 心跳机制"></a>11.2.4 心跳机制</h3><ul>
+<li>进入命令传播阶段候，master与slave间需要进行信息交换，使用心跳机制进行维护，实现双方连接保持在线</li>
+<li>master心跳：<ul>
+<li>指令：PING</li>
+<li> 周期：由repl-ping-slave-period决定，默认10秒</li>
+<li> 作用：判断slave是否在线</li>
+<li>查询：INFO replication  获取slave最后一次连接时间间隔，lag项维持在0或1视为正常</li>
+</ul>
+</li>
+<li>slave心跳任务<ul>
+<li> 指令：REPLCONF ACK {offset}</li>
+<li> 周期：1秒</li>
+<li>作用1：汇报slave自己的复制偏移量，获取最新的数据变更指令</li>
+<li> 作用2：判断master是否在线</li>
+</ul>
+</li>
+</ul>
+<h2 id="12-哨兵模式"><a href="#12-哨兵模式" class="headerlink" title="# 12. 哨兵模式"></a># 12. 哨兵模式</h2><h2 id="12-1-哨兵简介"><a href="#12-1-哨兵简介" class="headerlink" title="12.1 哨兵简介"></a>12.1 哨兵简介</h2><p>哨兵(sentinel) 是一个分布式系统，用于对主从结构中的每台服务器进行<font color='cornflowerblue'>监控</font>，当出现故障时通过投票机制<font color='cornflowerblue'>选择</font>新的master并将所有slave连接到新的master。</p>
+<p><strong>哨兵的作用</strong>    </p>
+<ul>
+<li>监控<ul>
+<li>不断的检查master和slave是否正常运行。</li>
+<li>master存活检测、master与slave运行情况检测</li>
+</ul>
+</li>
+<li>通知（提醒）<ul>
+<li>当被监控的服务器出现问题时，向其他（哨兵间，客户端）发送通知。</li>
+</ul>
+</li>
+<li>自动故障转移<ul>
+<li>断开master与slave连接，选取一个slave作为master，将其他slave连接到新的master，并告知客户端新的服务器地址</li>
+</ul>
+</li>
+</ul>
+<p><font color='cornflowerblue'>注意：</font></p>
+<ul>
+<li>哨兵也是一台redis服务器，只是不提供数据服务</li>
+<li>通常哨兵配置数量为<font color='red'>单数</font></li>
+</ul>
+<h2 id="12-2-启动哨兵模式"><a href="#12-2-启动哨兵模式" class="headerlink" title="12.2 启动哨兵模式"></a>12.2 启动哨兵模式</h2><ul>
+<li><p>配置一拖二的主从结构</p>
+</li>
+<li><p>配置三个哨兵（配置相同，端口不同）<br>参看sentinel.conf</p>
+</li>
+<li><p>启动哨兵</p>
+<blockquote>
+<p>redis-sentinel sentinel- 端口号 .conf</p>
+</blockquote>
+</li>
+</ul>
+<p>配置哨兵</p>
+<p><img src="https://cdn.jsdelivr.net/gh/kusuzi/image-folder@master/Redis/sential_config.png" srcset="/img/loading.gif" lazyload alt="sential_config"></p>
+<h2 id="12-3-哨兵工作原理"><a href="#12-3-哨兵工作原理" class="headerlink" title="12.3 哨兵工作原理"></a>12.3 哨兵工作原理</h2><p> 哨兵在进行主从切换过程中经历三个阶段</p>
+<ul>
+<li>监控</li>
+<li>通知</li>
+<li>故障转移</li>
+</ul>
+<h3 id="12-3-1-监控阶段"><a href="#12-3-1-监控阶段" class="headerlink" title="12.3.1 监控阶段"></a>12.3.1 监控阶段</h3><p>用于同步各个节点的状态信息</p>
+<ul>
+<li><p> 获取各个sentinel的状态（是否在线）</p>
+</li>
+<li><p> 获取master的状态</p>
+</li>
+<li><p>master属性</p>
+</li>
+<li><p>runid</p>
+</li>
+<li><p>role：master</p>
+</li>
+<li><p> 各个slave的详细信息</p>
+</li>
+<li><p>获取所有slave的状态（根据master中的slave信息）</p>
+<ul>
+<li> runid</li>
+<li>role：slave</li>
+<li> master_host、master_port</li>
+<li> offset</li>
+<li> ……</li>
+</ul>
+</li>
+</ul>
+<img src="https://cdn.jsdelivr.net/gh/kusuzi/image-folder@master/Redis/sential_stage01.png" srcset="/img/loading.gif" lazyload alt="sential_stage01"  />
+
+<h3 id="12-3-2-通知阶段"><a href="#12-3-2-通知阶段" class="headerlink" title="12.3.2 通知阶段"></a>12.3.2 通知阶段</h3><p><img src="https://cdn.jsdelivr.net/gh/kusuzi/image-folder@master/Redis/sential_stage02.png" srcset="/img/loading.gif" lazyload alt="sential_stage02"></p>
+<h3 id="12-3-3-故障转移阶段"><a href="#12-3-3-故障转移阶段" class="headerlink" title="12.3.3 故障转移阶段"></a>12.3.3 故障转移阶段</h3><p><img src="https://cdn.jsdelivr.net/gh/kusuzi/image-folder@master/Redis/sential_stage03.png" srcset="/img/loading.gif" lazyload alt="sential_stage03"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/kusuzi/image-folder@master/Redis/stage032.png" srcset="/img/loading.gif" lazyload alt="stage032"></p>
+<p>选择了哨兵老大过后，选择相应的slave当选master</p>
+<ul>
+<li>服务器列表中挑选备选master<ul>
+<li> 在线的</li>
+<li>响应快的</li>
+<li> 与原master断开时间短的</li>
+<li>优先原则<ul>
+<li> 优先级</li>
+<li>offset</li>
+<li>runid</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>发送指令（ sentinel ）<ul>
+<li> 向新的master发送slaveof no one</li>
+<li> 向其他slave发送slaveof 新masterIP端口</li>
+</ul>
+</li>
+</ul>
+<h3 id="12-4-总结"><a href="#12-4-总结" class="headerlink" title="12.4 总结"></a>12.4 总结</h3><ul>
+<li> 监控</li>
+<li> 同步信息</li>
+<li>通知<ul>
+<li> 保持联通   【sentinel和sentinel，sentinel和master和 slave】</li>
+</ul>
+</li>
+<li>故障转移<ul>
+<li> 发现问题</li>
+<li>竞选负责人   【选取sentinel来处理故障】</li>
+<li> 优选新master</li>
+<li> 新master上任，其他slave切换master，原master作为slave故障回复后连接</li>
+</ul>
+</li>
+</ul>
+<h1 id="13-Cluster"><a href="#13-Cluster" class="headerlink" title="13. Cluster"></a>13. Cluster</h1><h2 id="13-1-集群简介"><a href="#13-1-集群简介" class="headerlink" title="13.1 集群简介"></a>13.1 集群简介</h2><p>集群就是使用网络将若干台计算机联通起来，并提供统一的管理方式，使其对外呈现单机的服务效果</p>
+<p><strong>集群作用</strong></p>
+<ul>
+<li><p> 分散单台服务器的访问压力，实现负载均衡</p>
+</li>
+<li><p> 分散单台服务器的存储压力，实现可扩展性</p>
+</li>
+<li><p> 降低单台服务器宕机带来的业务灾难</p>
+</li>
+</ul>
+  <img src="https://cdn.jsdelivr.net/gh/kusuzi/image-folder@master/Redis/cluster.png" srcset="/img/loading.gif" lazyload alt="cluster" style="zoom:67%;" />
+
+<h2 id="13-2-redis集群结构设计"><a href="#13-2-redis集群结构设计" class="headerlink" title="13.2 redis集群结构设计"></a>13.2 redis集群结构设计</h2><ol>
+<li>数据存储设计</li>
+</ol>
+<ul>
+<li><p>通过算法设计，计算出key应该保存的位置</p>
+</li>
+<li><p>将所有的存储空间计划切割成16384份，每台主机保存一部分每份代表的是一个存储空间，不是一个key的保存空间</p>
+</li>
+<li><p>将key按照计算出的结果放到对应的存储空间【槽】</p>
+<img src="https://cdn.jsdelivr.net/gh/kusuzi/image-folder@master/Redis/slot_cal.png" srcset="/img/loading.gif" lazyload alt="slot_cal" style="zoom:67%;" /></li>
+</ul>
+<img src="https://cdn.jsdelivr.net/gh/kusuzi/image-folder@master/Redis/slot.png" srcset="/img/loading.gif" lazyload alt="slot" style="zoom:50%;" />
+
+<ol start="2">
+<li>集群内部通讯设计</li>
+</ol>
+<ul>
+<li><p>各个数据库相互通信，保存各个库中槽的编号数据</p>
+</li>
+<li><p>一次命中，直接返回</p>
+</li>
+<li><p>一次未命中，告知具体位置</p>
+<img src="https://cdn.jsdelivr.net/gh/kusuzi/image-folder@master/Redis/cluster_com.png" srcset="/img/loading.gif" lazyload alt="cluster_com" style="zoom:67%;" /></li>
+</ul>
+<h2 id="13-3-cluster集群结构搭建"><a href="#13-3-cluster集群结构搭建" class="headerlink" title="13.3 cluster集群结构搭建"></a>13.3 cluster集群结构搭建</h2><p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1CJ411m7Gc?p=104&spm_id_from=pageDriver">视频搭建教程</a></p>
+<h1 id="14-企业级解决方案"><a href="#14-企业级解决方案" class="headerlink" title="14. 企业级解决方案"></a>14. 企业级解决方案</h1><h2 id="14-2-缓存预热"><a href="#14-2-缓存预热" class="headerlink" title="14.2 缓存预热"></a>14.2 缓存预热</h2><p><strong>问题</strong>：服务器启动后迅速宕机</p>
+<p><strong>排查：</strong></p>
+<ol>
+<li>请求数量较高</li>
+<li>主从之间数据吞吐量较大，数据同步操作频度较高</li>
+</ol>
+<p><strong>解决方案：</strong></p>
+<p>前置准备工作：</p>
+<ol>
+<li>日常例行统计数据访问记录，统计访问频度较高的热点数据</li>
+<li>利用LRU数据删除策略，构建数据留存队列<br>例如：storm与kafka配合</li>
+</ol>
+<p>准备工作：</p>
+<ol>
+<li>将统计结果中的数据分类，根据级别，redis优先加载级别较高的热点数据</li>
+<li>利用分布式多服务器同时进行数据读取，提速数据加载过程</li>
+<li>热点数据主从同时预热</li>
+</ol>
+<p>实施：</p>
+<ol>
+<li>使用脚本程序固定触发数据预热过程</li>
+<li>如果条件允许，使用了CDN（内容分发网络），效果会更好</li>
+</ol>
+<p><strong>总结</strong>：缓存预热就是系统启动前，<font color='red'>提前将相关的缓存数据直接加载到缓存系统</font>。避免在用户请求的时候，先查询数据库，然后再将数据缓<br>存的问题！用户直接查询事先被预热的缓存数据！</p>
+<h2 id="14-2-缓存雪崩"><a href="#14-2-缓存雪崩" class="headerlink" title="14.2 缓存雪崩"></a>14.2 缓存雪崩</h2><p><strong>问题</strong>：缓存雪崩描述的就是这样⼀个简单的场景：<strong>缓存在同⼀时间大面积的失效，后⾯的请求都直接落到了数据库上，</strong>造成数据库短时间内承受⼤量请求。 这就好⽐雪崩⼀样，摧枯拉朽之势，数据库的压⼒可想⽽知，可能直接就被这么多请求弄宕机了。</p>
+<p><strong>解决方案：</strong></p>
+<p>针对 Redis 服务不可⽤的情况：</p>
+<ol>
+<li>采⽤ Redis 集群，避免单机出现问题整个缓存服务都没办法使⽤。</li>
+<li>限流，避免同时处理⼤量的请求。</li>
+</ol>
+<p>针对热点缓存失效的情况：</p>
+<ol>
+<li>数据有效期策略调整<ul>
+<li>根据业务数据有效期进行分类错峰，A类90分钟，B类80分钟，C类70分钟</li>
+<li>过期时间使用固定时间+随机值的形式，稀释集中到期的key的数量</li>
+</ul>
+</li>
+<li>缓存永不失效。</li>
+</ol>
+<p><strong>总结：</strong>缓存雪崩就是<strong>瞬间过期数据量太大，导致对数据库服务器造成压力。</strong>如能够有效避免过期时间集中，可以有效解决雪崩现象的出现<br>（约40%），配合其他策略一起使用，并监控服务器的运行数据，根据运行记录做快速调整。</p>
+<h2 id="14-3-缓存击穿"><a href="#14-3-缓存击穿" class="headerlink" title="14.3 缓存击穿"></a>14.3 缓存击穿</h2><p><strong>问题：</strong></p>
+<ol>
+<li>Redis中<strong>某个key</strong>过期，该key访问量巨大</li>
+<li>多个数据请求从服务器直接压到Redis后，均未命中</li>
+<li>Redis在短时间内发起了大量对数据库中<strong>同一数据的访问</strong></li>
+</ol>
+<p><strong>解决方案：</strong></p>
+<ol>
+<li>预先设定<br>以电商为例，每个商家根据店铺等级，指定若干款主打商品，在购物节期间，加大此类信息key的过期时长<br>注意：购物节不仅仅指当天，以及后续若干天，访问峰值呈现逐渐降低的趋势</li>
+<li>现场调整<br>监控访问量，对自然流量激增的数据延长过期时间或设置为永久性key</li>
+<li>后台刷新数据<br>启动定时任务，高峰期来临之前，刷新数据有效期，确保不丢失</li>
+<li>二级缓存<br>设置不同的失效时间，保障不会被同时淘汰就行</li>
+<li>加锁<br>分布式锁，防止被击穿，但是要注意也是性能瓶颈，慎重！</li>
+</ol>
+<p><strong>总结</strong>：缓存击穿就是<strong>单个高热数据过期的瞬间，数据访问量较大</strong>，未命中redis后，发起了大量对同一数据的数据库访问，导致对数据库服务器造成压力。应对策略应该在业务数据分析与预防方面进行，配合运行监控测试与即时调整策略，毕竟单个key的过期监控难度<br>较高，配合雪崩处理策略即可。</p>
+<h2 id="14-4-缓存穿透"><a href="#14-4-缓存穿透" class="headerlink" title="14.4 缓存穿透"></a>14.4 缓存穿透</h2><p><strong>问题：</strong></p>
+<ul>
+<li>获取的数据在Redis和数据库中都不存在，数据库查询未得到对应数据</li>
+<li>Redis获取到null数据未进行持久化，直接返回</li>
+<li>下次此类数据到达重复上述过程</li>
+<li>出现黑客攻击服务</li>
+</ul>
+<p><strong>解决方案：</strong></p>
+<ol>
+<li>缓存null【无效key】<br>对查询结果为null的数据进行缓存（长期使用，定期清理），设定短时限，例如30-60秒，最高5分钟</li>
+<li>白名单策略</li>
+</ol>
+<ul>
+<li>提前预热各种分类数据id对应的bitmaps，id作为bitmaps的offset，相当于设置了数据白名单。当加载正常数据时，放<br>行，加载异常数据时直接拦截（效率偏低）</li>
+<li> <strong>使用布隆过滤器</strong>（有关布隆过滤器的命中问题对当前状况可以忽略）</li>
+</ul>
+<ol start="3">
+<li>实施监控<br>实时监控redis命中率（业务正常范围时，通常会有一个波动值）与null数据的占比</li>
+</ol>
+<ul>
+<li>非活动时段波动：通常检测3-5倍，超过5倍纳入重点排查对象</li>
+<li>活动时段波动：通常检测10-50倍，超过50倍纳入重点排查对象<br>根据倍数不同，启动不同的排查流程。然后使用黑名单进行防控（运营）</li>
+</ul>
+<ol start="4">
+<li>key加密<br>问题出现后，临时启动防灾业务key，对key进行业务层传输加密服务，设定校验程序，过来的key校验<br>例如每天随机分配60个加密串，挑选2到3个，混淆到页面数据id中，发现访问key不满足规则，驳回数据访问</li>
+</ol>
+<p>缓存击穿访问了不存在的数据，跳过了合法数据的redis数据缓存阶段，每次访问数据库，导致对数据库服务器造成压力,根本没有经过缓存这⼀层。通常此类数据的出现量是一个较低的值，当出现此类情况以毒攻毒，并及时报警。应对策略应该在临时预案防范方面多做文章。</p>
+<h2 id="14-5-性能指标监控"><a href="#14-5-性能指标监控" class="headerlink" title="14.5 性能指标监控"></a>14.5 性能指标监控</h2><ul>
+<li> 性能指标：Performance</li>
+<li> 内存指标：Memory</li>
+<li> 基本活动指标：Basic activity</li>
+<li>持久性指标：Persistence</li>
+<li>错误指标：Error</li>
+</ul>
+
             </div>
             <hr>
             <div>
