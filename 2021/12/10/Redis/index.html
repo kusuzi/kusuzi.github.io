@@ -58,7 +58,7 @@
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/kusuzi/image-folder@master/Redis/slot.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/kusuzi/image-folder@master/Redis/cluster_com.png">
 <meta property="article:published_time" content="2021-12-10T09:00:18.000Z">
-<meta property="article:modified_time" content="2021-12-16T11:31:27.046Z">
+<meta property="article:modified_time" content="2021-12-16T11:39:01.603Z">
 <meta property="article:author" content="Kusuzi">
 <meta property="article:tag" content="learn">
 <meta name="twitter:card" content="summary_large_image">
@@ -869,7 +869,7 @@
 <li>特点2：内存压力不是很大，长期占用内存的冷数据会被持续清理</li>
 <li>总结：周期性抽查存储空间（随机抽查，重点抽查）</li>
 </ol>
-<h2 id="10-2-4-删除策略比对"><a href="#10-2-4-删除策略比对" class="headerlink" title="10.2.4 删除策略比对"></a>10.2.4 删除策略比对</h2><table>
+<h3 id="10-2-4-删除策略比对"><a href="#10-2-4-删除策略比对" class="headerlink" title="10.2.4 删除策略比对"></a>10.2.4 删除策略比对</h3><table>
 <thead>
 <tr>
 <th>定期删除</th>
@@ -929,9 +929,9 @@
 </ul>
 <p><strong>单机redis的风险与问题</strong></p>
 <ul>
-<li>问题1.机器故障<pre><code>    现象：硬盘故障、系统崩溃
-    本质：数据丢失，很可能对业务造成灾难性打击
-     结论：基本上会放弃使用redis.
+<li>问题1.机器故障<pre><code>      现象：硬盘故障、系统崩溃
+      本质：数据丢失，很可能对业务造成灾难性打击
+       结论：基本上会放弃使用redis.
 </code></pre>
 </li>
 <li>问题2.容量瓶颈<pre><code>    现象：内存不足，从16G升级到64G，从64G升级到128G，无限升级内存
@@ -1155,7 +1155,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="12-哨兵模式"><a href="#12-哨兵模式" class="headerlink" title="# 12. 哨兵模式"></a># 12. 哨兵模式</h2><h2 id="12-1-哨兵简介"><a href="#12-1-哨兵简介" class="headerlink" title="12.1 哨兵简介"></a>12.1 哨兵简介</h2><p>哨兵(sentinel) 是一个分布式系统，用于对主从结构中的每台服务器进行<font color='cornflowerblue'>监控</font>，当出现故障时通过投票机制<font color='cornflowerblue'>选择</font>新的master并将所有slave连接到新的master。</p>
+<h1 id="12-哨兵模式"><a href="#12-哨兵模式" class="headerlink" title="12. 哨兵模式"></a>12. 哨兵模式</h1><h2 id="12-1-哨兵简介"><a href="#12-1-哨兵简介" class="headerlink" title="12.1 哨兵简介"></a>12.1 哨兵简介</h2><p>哨兵(sentinel) 是一个分布式系统，用于对主从结构中的每台服务器进行<font color='cornflowerblue'>监控</font>，当出现故障时通过投票机制<font color='cornflowerblue'>选择</font>新的master并将所有slave连接到新的master。</p>
 <p><strong>哨兵的作用</strong>    </p>
 <ul>
 <li>监控<ul>
@@ -1370,14 +1370,14 @@
 <li> <strong>使用布隆过滤器</strong>（有关布隆过滤器的命中问题对当前状况可以忽略）</li>
 </ul>
 <ol start="3">
-<li>实施监控<br>实时监控redis命中率（业务正常范围时，通常会有一个波动值）与null数据的占比</li>
+<li>实施监控<br> 实时监控redis命中率（业务正常范围时，通常会有一个波动值）与null数据的占比</li>
 </ol>
 <ul>
 <li>非活动时段波动：通常检测3-5倍，超过5倍纳入重点排查对象</li>
 <li>活动时段波动：通常检测10-50倍，超过50倍纳入重点排查对象<br>根据倍数不同，启动不同的排查流程。然后使用黑名单进行防控（运营）</li>
 </ul>
 <ol start="4">
-<li>key加密<br>问题出现后，临时启动防灾业务key，对key进行业务层传输加密服务，设定校验程序，过来的key校验<br>例如每天随机分配60个加密串，挑选2到3个，混淆到页面数据id中，发现访问key不满足规则，驳回数据访问</li>
+<li>key加密<br> 问题出现后，临时启动防灾业务key，对key进行业务层传输加密服务，设定校验程序，过来的key校验<br> 例如每天随机分配60个加密串，挑选2到3个，混淆到页面数据id中，发现访问key不满足规则，驳回数据访问</li>
 </ol>
 <p>缓存击穿访问了不存在的数据，跳过了合法数据的redis数据缓存阶段，每次访问数据库，导致对数据库服务器造成压力,根本没有经过缓存这⼀层。通常此类数据的出现量是一个较低的值，当出现此类情况以毒攻毒，并及时报警。应对策略应该在临时预案防范方面多做文章。</p>
 <h2 id="14-5-性能指标监控"><a href="#14-5-性能指标监控" class="headerlink" title="14.5 性能指标监控"></a>14.5 性能指标监控</h2><ul>
