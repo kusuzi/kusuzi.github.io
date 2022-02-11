@@ -32,7 +32,7 @@
 <meta property="og:image" content="https://raw.githubusercontent.com/kusuzi/image-folder/master/Hbase/image-20220125134508267.3h6ilodqnr80.webp">
 <meta property="og:image" content="https://raw.githubusercontent.com/kusuzi/image-folder/master/Hbase/image-20220125135018888.3z0w92mns100.webp">
 <meta property="article:published_time" content="2022-01-29T08:53:12.000Z">
-<meta property="article:modified_time" content="2022-02-09T07:00:32.145Z">
+<meta property="article:modified_time" content="2022-02-11T09:14:38.652Z">
 <meta property="article:author" content="Kusuzi">
 <meta property="article:tag" content="learn">
 <meta name="twitter:card" content="summary_large_image">
@@ -305,17 +305,15 @@
 <li><p>Hbae解压</p>
 <p>解压路径为/opt/module文件夹下</p>
 <blockquote>
-<p>tar -zxvf hbase-1.3.1-bin.tar.gz -C<br>/opt/module</p>
+<p>tar -zxvf hbase-1.3.1-bin.tar.gz -C /opt/module</p>
 </blockquote>
 </li>
 <li><p>修改Hbase的配置文件</p>
-<ol>
-<li>hbase-env.sh 修改内容</li>
-</ol>
+<p>(1) hbase-env.sh 修改内容</p>
 <blockquote>
 <p>export JAVA_HOME=/opt/module/jdk1.6.0_144<br>export HBASE_MANAGES_ZK=false</p>
 </blockquote>
-<p>2）hbase-site.xml 修改内容：</p>
+<p>(2) hbase-site.xml 修改内容：</p>
 <blockquote>
 <configuration>
     <property>
@@ -342,9 +340,7 @@
 <p>4）软连接 hadoop 配置文件到 HBase：</p>
 <blockquote>
 <p>ln  -s  /opt/module/hadoop-2.7.2/etc/hadoop/<strong>core-site.xml</strong>  /opt/module/hbase/conf/<strong>core-site.xml</strong></p>
-<ul>
-<li>ln  -s  /opt/module/hadoop-2.7.2/etc/hadoop/<strong>hdfs-site.xml</strong>  /opt/module/hbase/conf/<strong>hdfs-site.xml</strong></li>
-</ul>
+<p>ln  -s  /opt/module/hadoop-2.7.2/etc/hadoop/<strong>hdfs-site.xml</strong>  /opt/module/hbase/conf/<strong>hdfs-site.xml</strong></p>
 </blockquote>
 </li>
 <li><p>HBase 远程发送到其他集群</p>
