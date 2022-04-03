@@ -32,7 +32,7 @@
 <meta property="og:image" content="https://raw.githubusercontent.com/kusuzi/image-folder/master/Hbase/image-20220125134508267.3h6ilodqnr80.webp">
 <meta property="og:image" content="https://raw.githubusercontent.com/kusuzi/image-folder/master/Hbase/image-20220125135018888.3z0w92mns100.webp">
 <meta property="article:published_time" content="2022-01-29T08:53:12.000Z">
-<meta property="article:modified_time" content="2022-02-11T09:14:38.652Z">
+<meta property="article:modified_time" content="2022-02-11T09:18:02.416Z">
 <meta property="article:author" content="Kusuzi">
 <meta property="article:tag" content="learn">
 <meta name="twitter:card" content="summary_large_image">
@@ -214,7 +214,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      34 分钟
+      35 分钟
     </span>
   
 
@@ -314,25 +314,8 @@
 <p>export JAVA_HOME=/opt/module/jdk1.6.0_144<br>export HBASE_MANAGES_ZK=false</p>
 </blockquote>
 <p>(2) hbase-site.xml 修改内容：</p>
-<blockquote>
-<configuration>
-    <property>
-            <name>hbase.rootdir</name>
-            <value>**hdfs://hadoop102:9000/HBase**</value>
-    </property>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">configuration</span>&gt;</span><br>	<span class="hljs-tag">&lt;<span class="hljs-name">property</span>&gt;</span><br>			<span class="hljs-tag">&lt;<span class="hljs-name">name</span>&gt;</span>hbase.rootdir<span class="hljs-tag">&lt;/<span class="hljs-name">name</span>&gt;</span><br>			<span class="hljs-tag">&lt;<span class="hljs-name">value</span>&gt;</span>**hdfs://hadoop102:9000/HBase**<span class="hljs-tag">&lt;/<span class="hljs-name">value</span>&gt;</span><br>	<span class="hljs-tag">&lt;/<span class="hljs-name">property</span>&gt;</span><br><br>	<span class="hljs-tag">&lt;<span class="hljs-name">property</span>&gt;</span><br>		<span class="hljs-tag">&lt;<span class="hljs-name">name</span>&gt;</span>hbase.cluster.distributed<span class="hljs-tag">&lt;/<span class="hljs-name">name</span>&gt;</span><br>		<span class="hljs-tag">&lt;<span class="hljs-name">value</span>&gt;</span>true<span class="hljs-tag">&lt;/<span class="hljs-name">value</span>&gt;</span><br>	<span class="hljs-tag">&lt;/<span class="hljs-name">property</span>&gt;</span><br><br><span class="hljs-comment">&lt;!-- 0.98 后的新变动，之前版本没有.port,默认端口为 60000 --&gt;</span><br>	<span class="hljs-tag">&lt;<span class="hljs-name">property</span>&gt;</span><br>			<span class="hljs-tag">&lt;<span class="hljs-name">name</span>&gt;</span>hbase.master.port<span class="hljs-tag">&lt;/<span class="hljs-name">name</span>&gt;</span><br>			<span class="hljs-tag">&lt;<span class="hljs-name">value</span>&gt;</span>16000<span class="hljs-tag">&lt;/<span class="hljs-name">value</span>&gt;</span><br>	<span class="hljs-tag">&lt;/<span class="hljs-name">property</span>&gt;</span><br><br>	<span class="hljs-tag">&lt;<span class="hljs-name">property</span>&gt;</span><br>			<span class="hljs-tag">&lt;<span class="hljs-name">name</span>&gt;</span>hbase.zookeeper.quorum<span class="hljs-tag">&lt;/<span class="hljs-name">name</span>&gt;</span><br>			<span class="hljs-tag">&lt;<span class="hljs-name">value</span>&gt;</span>**hadoop102,hadoop103,hadoop104**<span class="hljs-tag">&lt;/<span class="hljs-name">value</span>&gt;</span><br><br>	<span class="hljs-tag">&lt;/<span class="hljs-name">property</span>&gt;</span><br><br>	<span class="hljs-tag">&lt;<span class="hljs-name">property</span>&gt;</span><br>			<span class="hljs-tag">&lt;<span class="hljs-name">name</span>&gt;</span>hbase.zookeeper.property.dataDir<span class="hljs-tag">&lt;/<span class="hljs-name">name</span>&gt;</span><br>			<span class="hljs-tag">&lt;<span class="hljs-name">value</span>&gt;</span>/opt/module/zookeeper-3.4.10/zkData<span class="hljs-tag">&lt;/<span class="hljs-name">value</span>&gt;</span><br>	<span class="hljs-tag">&lt;/<span class="hljs-name">property</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">configuration</span>&gt;</span><br></code></pre></td></tr></table></figure>
 
-<p>​    <property><br>​        <name>hbase.cluster.distributed</name><br>​        <value>true</value><br>​    </property></p>
-<!-- 0.98 后的新变动，之前版本没有.port,默认端口为 60000 -->
-<pre><code>&lt;property&gt;
-        &lt;name&gt;hbase.master.port&lt;/name&gt;
-        &lt;value&gt;16000&lt;/value&gt;
-&lt;/property&gt;
-</code></pre>
-<p>​    <property><br>​            <name>hbase.zookeeper.quorum</name><br>​            <value><strong>hadoop102,hadoop103,hadoop104</strong></value></p>
-<p>​    </property></p>
-<p>​    <property><br>​            <name>hbase.zookeeper.property.dataDir</name><br>​            <value>/opt/module/zookeeper-3.4.10/zkData</value><br>​    </property></p>
-</configuration>
-</blockquote>
 <p>3）regionservers：</p>
 <blockquote>
 <p>hadoop102<br>hadoop103<br>hadoop104</p>
