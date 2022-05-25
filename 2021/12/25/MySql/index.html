@@ -24,7 +24,7 @@
 <meta property="og:description" content="本视频是按照尚硅谷的相关教程所做的笔记😋。 数据库的好处​    1.持久化数据到本地​    2.可以实现结构化查询，方便管理​     数据库相关概念​    1、DB：数据库，保存一组有组织的数据的容器​    2、DBMS：数据库管理系统，又称为数据库软件（产品），用于管理DB中的数据​    3、SQL:结构化查询语言，用于和DBMS通信的语言 数据库存储数据的特点​    1、将数据">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-12-25T01:31:40.000Z">
-<meta property="article:modified_time" content="2022-02-09T07:46:29.859Z">
+<meta property="article:modified_time" content="2022-05-25T13:59:54.044Z">
 <meta property="article:author" content="Kusuzi">
 <meta property="article:tag" content="learn">
 <meta name="twitter:card" content="summary_large_image">
@@ -245,17 +245,14 @@
 <li>方式一：计算机——右击管理——服务</li>
 <li>方式二：通过管理员身份运行<br>​    net start 服务名（启动服务）<br>​    net stop 服务名（停止服务）</li>
 </ul>
-<h3 id="1-2-MySQL服务的登录和退出"><a href="#1-2-MySQL服务的登录和退出" class="headerlink" title="1.2 MySQL服务的登录和退出"></a>1.2 MySQL服务的登录和退出</h3><ul>
-<li><p>方式一：通过mysql自带的客户端</p>
+<h3 id="1-2-MySQL服务的登录和退出"><a href="#1-2-MySQL服务的登录和退出" class="headerlink" title="1.2 MySQL服务的登录和退出"></a>1.2 MySQL服务的登录和退出</h3><ol>
+<li><p>通过mysql自带的客户端</p>
 <pre><code>只限于root用户
 </code></pre>
 </li>
-<li><p>方式二：通过windows自带的客户端</p>
-<pre><code>登录：mysql 【-h主机名 -P端口号 】-u用户名 -p密码
-</code></pre>
-<p>  退出：exit或ctrl+C</p>
+<li><p>通过windows自带的客户端<br>  登录：mysql 【-h主机名 -P端口号 】-u 用户名 -p密码<br>  退出：exit或ctrl+C</p>
 </li>
-</ul>
+</ol>
 <h3 id="1-3-MySQL的常见命令"><a href="#1-3-MySQL的常见命令" class="headerlink" title="1.3 MySQL的常见命令"></a>1.3 MySQL的常见命令</h3><pre><code>1.查看当前所有的数据库
 show databases;
 2.打开指定的库
@@ -266,7 +263,6 @@ show tables;
 show tables from 库名;
 5.创建表
 create table 表名(
-
     列名 列类型,
     列名 列类型，
     。。。
@@ -296,7 +292,7 @@ TCL（Transaction Control Language）：事务控制语言
 <h2 id="二、DQL语言的学习"><a href="#二、DQL语言的学习" class="headerlink" title="二、DQL语言的学习"></a>二、DQL语言的学习</h2><h3 id="进阶1：基础查询"><a href="#进阶1：基础查询" class="headerlink" title="进阶1：基础查询"></a>进阶1：基础查询</h3><p>​    语法：<br>​    <em>SELECT 要查询的东西</em><br><em>​    【FROM 表名】;</em></p>
 <pre><code>类似于Java中 :System.out.println(要打印的东西);
 特点：
-①通过select查询完的结果 ，是一个虚拟的表格，不是真实存在
+① 通过select查询完的结果 ，是一个虚拟的表格，不是真实存在
 ② 要查询的东西 可以是常量值、可以是表达式、可以是字段、可以是函数
 </code></pre>
 <h3 id="进阶2：条件查询"><a href="#进阶2：条件查询" class="headerlink" title="进阶2：条件查询"></a>进阶2：条件查询</h3><p>​    条件查询：根据条件过滤原始表的数据，查询到想要的数据<br><em>​    语法：</em><br><em>​    select</em><br><em>​        要查询的字段|表达式|常量值|函数</em><br><em>​    from</em><br><em>​        表</em><br><em>​    where</em><br><em>​        条件 ;</em></p>
@@ -304,16 +300,18 @@ TCL（Transaction Control Language）：事务控制语言
 一、条件表达式
     示例：salary&gt;10000
     条件运算符：
-    &gt; &lt; &gt;= &lt;= = != &lt;&gt;
+    &gt; 、&lt; 、&gt;= 、&lt;= 、= 、!=/&lt;&gt;
+    空值检查：
+    is (not) null
 
 二、逻辑表达式
 示例：salary&gt;10000 &amp;&amp; salary&lt;20000
 
 逻辑运算符：
-
     and（&amp;&amp;）:两个条件如果同时成立，结果为true，否则为false
     or(||)：两个条件只要有一个成立，结果为true，否则为false
     not(!)：如果条件成立，则not后为false，否则为true
+    and 的优先级高于 or
 
 三、模糊查询
 示例：last_name like &#39;a%&#39;
@@ -365,8 +363,8 @@ order by 排序的字段|表达式|函数|别名 【asc|desc】
     
 5、其他函数
     version版本
-    database当前库
-    user当前连接用户
+    database 当前库
+    user 当前连接用户
 </code></pre>
 <p>​    </p>
 <p>二、分组函数</p>
@@ -479,14 +477,14 @@ from 表
 limit 【起始的条目索引，】条目数;
 </code></pre>
 <p>特点：</p>
-<pre><code>1.起始条目索引从0开始
+<pre><code>1.起始条目索引从0开始 
 
 2.limit子句放在查询语句的最后
 
 3.公式：select * from  表 limit （page-1）*sizePerPage,sizePerPage
 假如:
 每页显示条目数sizePerPage
-要显示的页数 page
+从那一页开始显示 page
 </code></pre>
 <h3 id="进阶9：联合查询"><a href="#进阶9：联合查询" class="headerlink" title="进阶9：联合查询"></a>进阶9：联合查询</h3><p>引入：<br>    union 联合、合并</p>
 <p>语法：</p>
@@ -556,15 +554,15 @@ drop database 库名
 <p>​    </p>
 <h4 id="4-2-2-修改表-alter"><a href="#4-2-2-修改表-alter" class="headerlink" title="4.2.2.修改表 alter"></a>4.2.2.修改表 alter</h4><pre><code>语法：ALTER TABLE 表名 ADD|MODIFY|DROP|CHANGE COLUMN 字段名 【字段类型】;
 </code></pre>
-<h5 id="①修改字段名"><a href="#①修改字段名" class="headerlink" title="①修改字段名"></a>①修改字段名</h5><pre><code>ALTER TABLE studentinfo CHANGE  COLUMN sex gender CHAR;
+<h5 id="①修改表名"><a href="#①修改表名" class="headerlink" title="①修改表名"></a>①修改表名</h5><pre><code>RENAME TABLE stuinfo TO studentinfo;
 </code></pre>
-<h5 id="②修改表名"><a href="#②修改表名" class="headerlink" title="②修改表名"></a>②修改表名</h5><pre><code>ALTER TABLE stuinfo RENAME [TO]  studentinfo;
+<h5 id="②修改字段名"><a href="#②修改字段名" class="headerlink" title="②修改字段名"></a>②修改字段名</h5><pre><code>ALTER TABLE studentinfo CHANGE sex gender VARCHAR(5);
 </code></pre>
-<h5 id="③修改字段类型和列级约束"><a href="#③修改字段类型和列级约束" class="headerlink" title="③修改字段类型和列级约束"></a>③修改字段类型和列级约束</h5><pre><code>ALTER TABLE studentinfo MODIFY COLUMN borndate DATE ;    
+<h5 id="③修改字段类型和列级约束"><a href="#③修改字段类型和列级约束" class="headerlink" title="③修改字段类型和列级约束"></a>③修改字段类型和列级约束</h5><pre><code>ALTER TABLE studentinfo MODIFY gender CHAR(5) ;    
 </code></pre>
-<h5 id="④添加字段"><a href="#④添加字段" class="headerlink" title="④添加字段"></a>④添加字段</h5><pre><code>ALTER TABLE studentinfo ADD COLUMN email VARCHAR(20) first;
+<h5 id="④添加字段"><a href="#④添加字段" class="headerlink" title="④添加字段"></a>④添加字段</h5><pre><code>ALTER TABLE studentinfo ADD email VARCHAR(20);
 </code></pre>
-<h5 id="⑤删除字段"><a href="#⑤删除字段" class="headerlink" title="⑤删除字段"></a>⑤删除字段</h5><pre><code>ALTER TABLE studentinfo DROP COLUMN email;
+<h5 id="⑤删除字段"><a href="#⑤删除字段" class="headerlink" title="⑤删除字段"></a>⑤删除字段</h5><pre><code>ALTER TABLE studentinfo DROP email;
 </code></pre>
 <h4 id="4-2-3-删除表"><a href="#4-2-3-删除表" class="headerlink" title="4.2.3.删除表"></a>4.2.3.删除表</h4><figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs pgsql"><span class="hljs-keyword">DROP</span> <span class="hljs-keyword">TABLE</span> [<span class="hljs-keyword">IF</span> <span class="hljs-keyword">EXISTS</span>] 表名;<br></code></pre></td></tr></table></figure>
 
